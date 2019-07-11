@@ -25,9 +25,10 @@ class Activity extends Component {
         const { inputName, inputActivity } = this.state
         return (
             <div>
-                <h2>name: {name} IS: {activity}</h2>
+                <h2>name: {name}</h2>
                 <input onChange={e => this.handleNameChange(e)}></input>
                 <button onClick={() => this.props.setName(inputName)}>submit</button>
+                <h2>activity: {activity}</h2>
                 <input onChange={e => this.handleActivityChange(e)}></input>
                 <button onClick={() => this.props.setActivity(inputActivity)}>submit</button>
             </div>
